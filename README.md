@@ -1,6 +1,6 @@
-This is an easy technique to develop Wordpress plugins through a Docker instance with a locally mounted plugins folder.
+Develop Wordpress plugins easily through a Docker instance with a locally mounted plugins folder.
 
-Wordpress, Apache and MySQL are all automatically created in tidy, isolated containers that can be created and destroyed as needed, but your plugin folder will remain undisturbed.
+Wordpress, Apache and MySQL are automatically created in tidy, isolated containers that can be created and destroyed as needed while your plugin folder remains undisturbed.
 
 # Quickstart
 
@@ -12,13 +12,13 @@ Wordpress, Apache and MySQL are all automatically created in tidy, isolated cont
     docker-compose up
     ```
 
-3. Now just drop any plugins you're developing into the current directory's `plugins/` folder. This is linked to the Wordpress container's `/var/www/html/wp-content/plugins/` folder.
+3. Put your plugins in the `plugins/` folder. This is linked to the Wordpress container's `/var/www/html/wp-content/plugins/` folder.
 
 Your Wordpress instance will be available at `http://localhost:8000/wp-admin/`
 
 # See Also
 
-For [Gutenberg](https://wordpress.org/gutenberg/) development, this pairs nicely with [create-guten-block](https://github.com/ahmadawais/create-guten-block):
+For [Gutenberg](https://wordpress.org/gutenberg/) development, this pairs nicely with [create-guten-block](https://github.com/ahmadawais/create-guten-block#getting-started):
 
 ```
 cd plugins
